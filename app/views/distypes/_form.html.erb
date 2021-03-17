@@ -1,0 +1,43 @@
+<%= form_with(model: distype) do |form| %>
+  <% if distype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(distype.errors.count, "error") %> prohibited this distype from being saved:</h2>
+
+      <ul>
+        <% distype.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :discount_name %>
+    <%= form.text_field :discount_name %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :discount_amount %>
+    <%= form.text_field :discount_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unit %>
+    <%= form.number_field :unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start %>
+    <%= form.datetime_select :start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end %>
+    <%= form.datetime_select :end %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

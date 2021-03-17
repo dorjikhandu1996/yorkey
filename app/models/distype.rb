@@ -1,0 +1,2 @@
+class Distype < ApplicationRecord
+end

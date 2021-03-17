@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: one
+  name: MyString
+  serial_number: MyString
+  size: MyString
+  cost: 1.5
+  distype: one
+  sku: 1
+  description: MyText
+
+two:
+  category: two
+  name: MyString
+  serial_number: MyString
+  size: MyString
+  cost: 1.5
+  distype: two
+  sku: 1
+  description: MyText
