@@ -14,8 +14,8 @@
   <div class="field">
     <%= form.label :category_id %>
     <select name="product[category_id]" id="product_category_id">
-      <% Category.all.each do |r| %>
-        <option value="<%= r.id %>"> <%= r.name %></option>
+      <% Category.all.each do |c| %>
+        <option value="<%= c.id %>"> <%= c.name %></option>
       <% end %>
     </select>
   </div>
@@ -42,16 +42,7 @@
   </div>
 
 
-  <div class="field">
-    <%= form.label :discount_amount_id %>
-    <select name="product[distype_id]" id="product_distype_id">
-      <% Distype.all.each do |r| %>
-        <option value="<%= r.id %>"> <%= r.discount_amount %></option>
-      <% end %>
-    </select>
-  </div>
-
-
+  
   <div class="field">
     <%= form.label :sku %>
     <%= form.number_field :sku %>
