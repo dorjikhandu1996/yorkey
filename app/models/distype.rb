@@ -1,2 +1,0 @@
-class Distype < ApplicationRecord
-end

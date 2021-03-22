@@ -1,6 +1,6 @@
 require "test_helper"
 
-class DistypeTest < ActiveSupport::TestCase
+class DiscountTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

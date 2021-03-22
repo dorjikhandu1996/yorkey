@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :discounts
   get 'carts/show'
   root to:'pages#home'
   devise_for :users
-  resources :distypes
   resources :products
   resources :categories
   resources :order_items
