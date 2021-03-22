@@ -30,17 +30,6 @@ ActiveRecord::Schema.define(version: 2021_03_22_190532) do
     t.index ["product_id"], name: "index_discounts_on_product_id"
   end
 
-  create_table "distypes", force: :cascade do |t|
-    t.string "discount_name"
-    t.float "discount_amount"
-    t.integer "unit"
-    t.datetime "start"
-    t.datetime "end"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "percent"
-  end
-
   create_table "order_items", force: :cascade do |t|
     t.integer "quantity"
     t.integer "product_id"

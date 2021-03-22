@@ -13,7 +13,11 @@
 
   <div class="field">
     <%= form.label :product_id %>
-    <%= form.text_field :product_id %>
+    <select name="discount[product_id]" id="discount_product_id">
+      <% Product.all.each do |p| %>
+        <option value="<%= p.id %>"> <%= p.name %></option>
+      <% end %>
+    </select>
   </div>
 
   <div class="field">

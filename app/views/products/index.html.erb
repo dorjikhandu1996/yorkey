@@ -26,8 +26,8 @@
         <td><%= product.serial_number %></td>
         <td><%= product.size %></td>
         <td><%= product.cost %></td>
-        <td><%= product.description %></td>
         <td><%= product.sku %></td>
+        <td><%= product.description %></td>
         <td>
           <%= form_for @order_item, remote: true do |f|%>
           <%= f.hidden_field :product_id, :value => product.id %>          
