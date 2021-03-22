@@ -5,6 +5,7 @@ class OrderItem < ApplicationRecord
     before_save :set_unit_cost
     before_save :set_total
 
+   
     def unit_cost
         if persisted?
             self[:unit_cost]
