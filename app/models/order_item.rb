@@ -5,13 +5,12 @@ class OrderItem < ApplicationRecord
 
     before_save :set_unit_cost
     before_save :set_total
-    # before_save :set_discount_amount
     
     
     
-    # def discount_amount
-    #    Discount.all.map{|d|[d.discount_amount, d.id]}
-    # end
+  
+    
+
    
     def unit_cost
         # if !discounts.discount_amount.nil?

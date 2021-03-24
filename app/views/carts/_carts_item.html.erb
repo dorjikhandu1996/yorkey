@@ -12,7 +12,7 @@
         <%= f.number_field :quantity, :value =>item.quantity.to_i%>
         <%= f.submit "Update Cart"%>
         <%= f.label :Discount %>
-        
+         <%# prepopulate here %>
         <%= f.select :discount_id, options_for_select(Discount.all.map{|d|[d.discount_amount, d.id]}) %>
        
         <%= link_to "Remove Items",order_item_path(item),method: :delete, remote: true %>
